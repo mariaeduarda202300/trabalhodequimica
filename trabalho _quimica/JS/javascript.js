@@ -8,19 +8,3 @@ document.addEventListener('mousemove', (e) => {
   });
 });
 
-/*Seleciona todos os links das seções trabalhos e elementos turma 2*/ 
-const todosLinks = document.querySelectorAll(".trabalhos a, .elementos_turma2 a");
-/*Para cada link, adiciona a lógica*/ 
-todosLinks.forEach(link => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault(); // Impede o comportamento padrão do link
-
-    // Adiciona a classe hidden para sumir com fade
-    link.classList.add("hidden");
-
-    // Depois de 3 segundos, remove a classe para reaparecer
-    setTimeout(() => {
-      link.classList.remove("hidden");
-    }, 3000);
-  });
-});
