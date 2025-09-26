@@ -100,14 +100,11 @@ p {
 /* Links */
 a {
   color: #ff0faf; /* link ainda não visitado */
-  text-decoration: none;
-  transition: color 0.5s, opacity 0.5s ease; /* adiciona transição de opacidade */
 }
 
 a:visited {
-  color: rgb(190, 81, 233); /* link visitado */
+  color: #4a148c; /* Cor do link visitado - roxo ainda mais escuro */
 }
-
 
 /* Footer */
 footer {
